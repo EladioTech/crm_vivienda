@@ -1,0 +1,59 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+  background: #f9f9f9;
+}
+
+h1 { margin-bottom: 10px; }
+.vivienda-info span { margin-right: 20px; }
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  border: 1px solid #ccc;
+  text-align: center;
+  padding: 6px;
+}
+
+td.estado {
+  position: relative;
+  cursor: pointer;
+  transition: background 0.3s;
+  width: 60px; height: 40px;
+}
+
+td.estado .importe {
+  width: 50px;
+  border: none;
+  background: transparent;
+  text-align: center;
+  font-weight: bold;
+  position: relative;
+  z-index: 2;
+}
+
+td.estado::after {
+  content: "";
+  width: 10px; height: 10px;
+  border-radius: 50%;
+  position: absolute;
+  top: 2px; right: 2px;
+  z-index: 1;
+}
+
+/* Colores semáforo */
+td.estado.no-aplica { background-color: #ddd; }
+td.estado.pendiente { background-color: #f5c542; }
+td.estado.pagado { background-color: #4caf50; }
+td.estado.no-pagado { background-color: #f44336; }
+
+td.estado.no-aplica::after { background-color: #999; }
+td.estado.pendiente::after { background-color: #f5c542; }
+td.estado.pagado::after { background-color: #4caf50; }
+td.estado.no-pagado::after { background-color: #f44336; }
+
+tfoot td { font-weight: bold; background: #eee; }
+.controls button { margin-right: 10px; padding: 5px 10px; cursor: pointer; }

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>CRM Vivienda · Hipoteca</title>
+  <link rel="stylesheet" href="style.css">
+  <input type="file" id="fileJson" accept=".json" hidden>
+</head>
+
+<body>
+  <header>
+    <h1>🏠 CRM Vivienda / Hipoteca (2026)</h1>
+    <div class="vivienda-info">
+      <span><strong>Dirección:</strong> ____________</span>
+      <span><strong>Banco:</strong> ____________</span>
+      <span><strong>Año:</strong> 2026</span>
+    </div>
+  </header>
+
+  <section class="controls">
+    <button id="anio-anterior">⬅ Año anterior</button>
+    <button id="anio-siguiente">Año siguiente ➡</button>
+    <button id="exportar">💾 Exportar JSON</button>
+    <button id="importar">📂 Importar JSON</button>
+  </section>
+
+  <section class="tabla-container">
+    <table>
+      <thead>
+        <tr>
+          <th>Concepto</th>
+          <th>Ene</th><th>Feb</th><th>Mar</th><th>Abr</th><th>May</th><th>Jun</th>
+          <th>Jul</th><th>Ago</th><th>Sep</th><th>Oct</th><th>Nov</th><th>Dic</th>
+          <th>Total</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+      <tfoot>
+        <tr class="totales-mes">
+          <td>Total mes</td>
+          <td>0 €</td><td>0 €</td><td>0 €</td><td>0 €</td><td>0 €</td><td>0 €</td>
+          <td>0 €</td><td>0 €</td><td>0 €</td><td>0 €</td><td>0 €</td><td>0 €</td>
+          <td class="gran-total">0 €</td>
+        </tr>
+      </tfoot>
+    </table>
+  </section>
+
+  <footer>
+    <p>CRM Vivienda · Control anual de gastos</p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>

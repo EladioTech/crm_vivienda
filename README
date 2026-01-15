@@ -1,0 +1,32 @@
+# CRM Vivienda / Hipoteca
+
+Proyecto web para llevar el control anual de gastos de una vivienda:
+
+- Hipoteca
+- Suministros (Luz, Agua, Gas, Internet)
+- Comunidad (Mensual, Ascensor, Derramas)
+- Impuestos (IBI, Catastro, Basura)
+- Fondo de imprevistos
+
+Funcionalidades:
+
+- Semáforo clicable para marcar estado (no-aplica, pendiente, pagado, no-pagado)
+- Input editable en cada celda para registrar importe
+- Totales por fila y columna
+- Exportar e importar datos en JSON
+- Navegación por año
+- Datos guardados en `localStorage`
+
+## Cómo usar
+
+1. Abrir `index.html` en un navegador moderno
+2. Introducir importes y marcar estados
+3. Exportar/importar JSON para respaldos
+
+---
+
+## Aviso sobre datos personales
+
+Este repositorio contiene **solo el código del CRM**, **no contiene datos reales** de viviendas ni importes personales.  
+
+

@@ -1,0 +1,12 @@
+# Archivos de datos locales de la vivienda
+*.json
+
+# Configuraciones locales del editor (opcional)
+.vscode/
+.idea/
+
+# Archivos temporales del sistema
+*.log
+*.tmp
+.DS_Store
+Thumbs.db
